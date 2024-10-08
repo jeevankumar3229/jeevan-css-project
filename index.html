@@ -1,35 +1,86 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
 
-    <title>Pricing component</title>
+  <title>Pricing component</title>
+</head>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-  </head>
-  <body>
-    Our Pricing Annually Monthly Basic &dollar;19.99 &dollar;199.99 500 GB
-    Storage 2 Users Allowed Send up to 3 GB Learn More Professional
-    &dollar;24.99 &dollar;249.99 1 TB Storage 5 Users Allowed Send up to 10 GB
-    Learn More Master &dollar;39.99 &dollar;399.99 2 TB Storage 10 Users Allowed
-    Send up to 20 GB Learn More
-  </body>
+<body>
+  <div class="container">
+    <div class="inner-container">
+      <div class="heading">
+        <h2>Our Pricing</h2>
+      </div>
+      <div class="sub-heading">
+        <div class="annual-monthly">Annually</div>
+        <div class="toggle-container">
+          <input type="checkbox" id="checkbox1">
+          <label for="checkbox1" class="button1"></label>
+        </div>
+        <div class="annual-monthly">Monthly</div>
+      </div>
+      <div class="plans">
+        <div class="basic-plan">
+          <div class="plan-name">
+            Basic
+          </div>
+          <div class="plan-price">
+            <div class="dollar">&dollar;</div>
+            <div class="price">199.99</div>
+          </div>
+          <hr />
+          <div class="storage">500 GB Storage</div>
+          <hr>
+          <div class="users">2 Users Allowed</div>
+          <hr>
+          <div class="send">Send up to 3 GB</div>
+          <hr>
+          <div class="button-container"><button class="first-button">LEARN MORE</button></div>
+        </div>
+        <div class="div5">
+          <div class="div13">
+            <div class="plan-name second">
+              Professional
+            </div>
+            <div class="plan-price">
+              <div class="dollar second">&dollar;</div>
+              <div class="price second">249.99</div>
+            </div>
+            <hr>
+            <div class="storage second">1 TB Storage</div>
+            <hr>
+            <div class="users second">5 Users Allowed</div>
+            <hr>
+            <div class="send second">Send up to 10 GB</div>
+            <hr>
+            <div class="button-container"><button class="second-button">LEARN MORE</button></div>
+          </div>
+        </div>
+        <div class="div6">
+          <div class="plan-name">
+            Master
+          </div>
+          <div class="plan-price">
+            <div class="dollar">&dollar;</div>
+            <div class="price">399.99</div>
+          </div>
+          <hr>
+          <div class="storage">2 TB Storage</div>
+          <hr>
+          <div class="users">10 Users Allowed</div>
+          <hr>
+          <div class="send">Send up to 20 GB</div>
+          <hr>
+          <div class="button-container"><button class="first-button">LEARN MORE</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>

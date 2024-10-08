@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700&display=swap");
+    body {
+      font-size: 15px;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .container {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .inner-container {
+      width:100%;
+      height: 100%;
+      background-color: hsl(240, 78%, 98%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url('./images/bg-top.svg'), url('./images/bg-bottom.svg');
+      background-position: top right,bottom left;
+      background-repeat: no-repeat;
+    background-size: 25%, 20%;
+    }
+
+    .heading {
+      width: 51vw;
+      height: 10vh;
+      background-color: hsl(240, 78%, 98%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: hsl(232, 13%, 33%);
+    }
+
+    .sub-heading {
+      width: 51vw;
+      height: 7vh;
+      background-color: hsl(240, 78%, 98%);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      column-gap: 10px;
+      margin-top: 10px;
+    }
+
+    .annual-monthly {
+      color: hsl(234, 14%, 74%);
+    }
+
+    .plans {
+      width: 51vw;
+      height: 46vh;
+      background-color: hsl(240, 78%, 98%);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: -20px;
+    }
+
+    .basic-plan {
+      background-color: white;
+      height: 35vh;
+      width: 17vw;
+      border-top-left-radius: 7px;
+      border-bottom-left-radius: 7px;
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+    }
+
+    .div5 {
+      background: linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+      height: 40vh;
+      width: 17vw;
+      border-radius: 7px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .div6 {
+      background-color: white;
+      height: 35vh;
+      width: 17vw;
+      border-top-right-radius: 7px;
+      border-bottom-right-radius: 7px;
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .plan-name {
+      color: hsl(232, 13%, 33%);
+    }
+
+    hr {
+      width: 80%;
+
+    }
+    .div13 {
+      height: 35vh;
+      width: 20vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .button-container {
+      width: 80%;
+      height: 10%;
+      margin-bottom: 10px;
+    }
+
+    button {
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 7px;
+    }
+
+    h1 {
+      display: inline;
+    }
+
+    .plan-price {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .storage {
+      color: hsl(232, 13%, 33%);
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .users {
+      color: hsl(232, 13%, 33%);
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .send {
+      color: hsl(232, 13%, 33%);
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .price {
+      font-size: 65px;
+      font-weight: bold;
+
+    }
+
+    .dollar {
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    .plan-name {
+      margin-top: 10px;
+      color: hsl(232, 13%, 33%);
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .second {
+      color: white;
+    }
+
+    .second-button {
+      background-color: white;
+      color: hsl(236, 72%, 79%);
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .first-button {
+      background: linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+    }
+    .toggle-container{
+      display: flex;
+    }
+    input{
+      display: none;
+    }
+    .button1{
+      width: 80px;
+      height: 40px;
+      background: linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+      border-radius: 80px;
+      cursor: pointer;
+      transition: 0.2s;
+      margin-top:-15px;
+    }
+
+    .button1::before{
+      position: absolute;
+      content: "";
+      background-color: white;
+      width: 37px;
+      height: 37px;
+      border-radius: 80px;
+      margin-top: 1.2px;
+      margin-left: 1px;
+    }
+    
