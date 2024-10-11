@@ -1,86 +1,64 @@
-
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner-container">
+        <h1>Our Pricing</h1>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
-
-  <title>Pricing component</title>
-</head>
-
-<body>
-  <div class="container">
-    <div class="inner-container">
-      <div class="heading">
-        <h2>Our Pricing</h2>
-      </div>
-      <div class="sub-heading">
-        <div class="annual-monthly">Annually</div>
         <div class="toggle-container">
-          <input type="checkbox" id="checkbox1">
-          <label for="checkbox1" class="button1"></label>
+          <span class="toggle-text">Annually</span>
+          <div class="toggle">
+            <input type="checkbox" id="check" />
+            <label for="check" class="button"></label>
+          </div>
+          <span class="toggle-text">Monthly</span>
         </div>
-        <div class="annual-monthly">Monthly</div>
-      </div>
-      <div class="plans">
-        <div class="basic-plan">
-          <div class="plan-name">
-            Basic
-          </div>
-          <div class="plan-price">
-            <div class="dollar">&dollar;</div>
-            <div class="price">199.99</div>
-          </div>
-          <hr />
-          <div class="storage">500 GB Storage</div>
-          <hr>
-          <div class="users">2 Users Allowed</div>
-          <hr>
-          <div class="send">Send up to 3 GB</div>
-          <hr>
-          <div class="button-container"><button class="first-button">LEARN MORE</button></div>
-        </div>
-        <div class="div5">
-          <div class="div13">
-            <div class="plan-name second">
-              Professional
-            </div>
-            <div class="plan-price">
-              <div class="dollar second">&dollar;</div>
-              <div class="price second">249.99</div>
-            </div>
+
+        <div class="plans">
+          <div class="basic">
+            <p class="plan-name">Basic</p>
+            <h1 class="pricing"><span class="currency">$</span>19.99</h1>
             <hr>
-            <div class="storage second">1 TB Storage</div>
+            <p class="plan-features">500GB Storage</p>
             <hr>
-            <div class="users second">5 Users Allowed</div>
+            <p class="plan-features">2 users allowed</p>
             <hr>
-            <div class="send second">Send up to 10 GB</div>
+            <p class="plan-features">Send upto 3GB</p>
             <hr>
-            <div class="button-container"><button class="second-button">LEARN MORE</button></div>
+            <button class="learn-more">LEARN MORE</button>
           </div>
-        </div>
-        <div class="div6">
-          <div class="plan-name">
-            Master
+          <div class="professional">
+            <p class="plan-name">Professional</p>
+            <h1 class="pricing"><span class="currency">$</span>24.99</h1>
+            <hr>
+            <p class="plan-features">1TB Storage</p>
+            <hr>
+            <p class="plan-features">5 users allowed</p>
+            <hr>
+            <p class="plan-features">Send upto 10GB</p>
+            <hr>
+            <button class="learn-more">LEARN MORE</button>
           </div>
-          <div class="plan-price">
-            <div class="dollar">&dollar;</div>
-            <div class="price">399.99</div>
+          <div class="master">
+            <p class="plan-name">Master</p>
+            <h1 class="pricing"><span class="currency">$</span>39.99</h1>
+            <hr>
+            <p class="plan-features">2TB Storage</p>
+            <hr>
+            <p class="plan-features">10 users allowed</p>
+            <hr>
+            <p class="plan-features">Send upto 20GB</p>
+            <hr>
+            <button class="learn-more">LEARN MORE</button>
           </div>
-          <hr>
-          <div class="storage">2 TB Storage</div>
-          <hr>
-          <div class="users">10 Users Allowed</div>
-          <hr>
-          <div class="send">Send up to 20 GB</div>
-          <hr>
-          <div class="button-container"><button class="first-button">LEARN MORE</button></div>
         </div>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>

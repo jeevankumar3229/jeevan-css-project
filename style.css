@@ -1,221 +1,259 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:700&display=swap");
-    body {
-      font-size: 15px;
-      font-family: "Montserrat", sans-serif;
-    }
 
-    .container {
-      display: flex;
-      width: 100vw;
-      height: 100vh;
-      justify-content: center;
-      align-items: center;
-    }
+* {
+  margin: 0;
+  padding: 0;
+}
 
-    .inner-container {
-      width:100%;
-      height: 100%;
-      background-color: hsl(240, 78%, 98%);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-image: url('./images/bg-top.svg'), url('./images/bg-bottom.svg');
-      background-position: top right,bottom left;
-      background-repeat: no-repeat;
-    background-size: 25%, 20%;
-    }
+body {
+  font-size: clamp(1rem, 1rem, 30px);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: hsl(233, 13%, 49%);
+}
 
-    .heading {
-      width: 51vw;
-      height: 10vh;
-      background-color: hsl(240, 78%, 98%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: hsl(232, 13%, 33%);
-    }
+.container {
+  display: flex;
+  justify-content: center;
+  background: hsl(240, 78%, 98%);
+  height: 100vh;
+  width: 100vw;
+  min-width: 90vw;
+  position: relative;
+  overflow: hidden;
+  background-image: url('./images/bg-top.svg'), url('./images/bg-bottom.svg');
+  background-position: top right, bottom left;
+  background-repeat: no-repeat;
+}
 
-    .sub-heading {
-      width: 51vw;
-      height: 7vh;
-      background-color: hsl(240, 78%, 98%);
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      column-gap: 10px;
-      margin-top: 10px;
-    }
+.container .inner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 
-    .annual-monthly {
-      color: hsl(234, 14%, 74%);
-    }
+  width: 70%;
+  height: 70%;
+  z-index: 2;
+  margin-top: 4rem;
+}
 
-    .plans {
-      width: 51vw;
-      height: 46vh;
-      background-color: hsl(240, 78%, 98%);
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      margin-top: -20px;
-    }
+.container .toggle-container {
+  display: flex;
+  min-width: 18%;
+  height: 3.5%;
+  font-size: clamp(15px, 1.7vh, 30px);
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
 
-    .basic-plan {
-      background-color: white;
-      height: 35vh;
-      width: 17vw;
-      border-top-left-radius: 7px;
-      border-bottom-left-radius: 7px;
-      margin-top: 25px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
+.container .toggle-container .toggle {
+  width: 5vw;
+  height: 3vh;
+  min-width: 86px;
+  padding-right: 0.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    }
+.container .inner-container .plans {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80%;
+  width: 100%;
+  margin-top: 3.5rem;
+}
 
-    .div5 {
-      background: linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
-      height: 40vh;
-      width: 17vw;
-      border-radius: 7px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-    }
+.container .inner-container .plans .basic,
+.container .inner-container .plans .professional,
+.container .inner-container .plans .master {
+  width: 26%;
+  min-height: 80%;
+  min-width: 330px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: hsl(233, 13%, 49%);
+  background-color: white;
+  padding-bottom: 1vh;
+  padding: 1vh;
+}
 
-    .div6 {
-      background-color: white;
-      height: 35vh;
-      width: 17vw;
-      border-top-right-radius: 7px;
-      border-bottom-right-radius: 7px;
-      margin-top: 25px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-    }
+.container .inner-container .plans .basic {
+  border-top-left-radius: 3%;
+  border-bottom-left-radius: 3%;
+  display: flex;
+  justify-content: space-evenly;
+}
 
-    .plan-name {
-      color: hsl(232, 13%, 33%);
-    }
+.container .inner-container .plans .professional {
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border-radius: 3%;
+  color: white;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
 
-    hr {
-      width: 80%;
+.container .inner-container .plans .master {
+  border-top-right-radius: 3%;
+  border-bottom-right-radius: 3%;
+}
 
-    }
-    .div13 {
-      height: 35vh;
-      width: 20vw;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-    }
+.container .inner-container .plans .plan-name {
+  padding-bottom: 3vh;
+  padding-top: 2vh;
+  font-size: 2vh;
+  margin-bottom: 0px;
+}
 
-    .button-container {
-      width: 80%;
-      height: 10%;
-      margin-bottom: 10px;
-    }
+.container .inner-container .plans .professional .pricing {
+  color: White;
+}
 
-    button {
-      width: 100%;
-      height: 100%;
-      border: none;
-      border-radius: 7px;
-    }
+hr{
+  width: 80%;
+}
+.container .inner-container .plans .plan-features {
+  padding: 2vh;
+  /* border-bottom: 0.2vh solid hsl(234, 14%, 74%); */
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  margin-bottom: 2vh;
+}
 
-    h1 {
-      display: inline;
-    }
+.container .inner-container .plans .pricing {
+  /* border-bottom: 0.2vh solid hsl(234, 14%, 74%); */
+  padding-bottom: 5vh;
+  font-size: 8vh;
+  color: black;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
 
-    .plan-price {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-    }
+.container .inner-container .plans .currency {
+  font-size: 6vh;
+  margin-top: 2vh;
+  padding-right: 0.5vw;
+}
 
-    .storage {
-      color: hsl(232, 13%, 33%);
-      font-size: 15px;
-      font-weight: bold;
-    }
 
-    .users {
-      color: hsl(232, 13%, 33%);
-      font-size: 15px;
-      font-weight: bold;
-    }
+.container .toggle-container .toggle .button {
+  background: hsl(236, 72%, 79%);
 
-    .send {
-      color: hsl(232, 13%, 33%);
-      font-size: 15px;
-      font-weight: bold;
-    }
+  width: 70%;
+  height: 95%;
+  margin-left: 2%;
+  border-radius: 2vh;
+  position: relative;
+  cursor: pointer;
+}
 
-    .price {
-      font-size: 65px;
-      font-weight: bold;
+.container .toggle-container .toggle .button:hover {
+  background-color: hsl(233, 49%, 82%);
+}
 
-    }
+.button::before {
+  content: "";
+  height: 90%;
+  width: 40%;
+  border-radius: 50%;
+  margin: 0.15vh;
+  transition: 0.2s;
+  background-color: white;
+  position: absolute;
+}
 
-    .dollar {
-      font-size: 40px;
-      font-weight: bold;
-    }
+input:checked+.button::before {
+  transform: translateX(3.3vh);
+}
 
-    .plan-name {
-      margin-top: 10px;
-      color: hsl(232, 13%, 33%);
-      font-size: 15px;
-      font-weight: bold;
-    }
+input {
+  display: none;
+}
 
-    .second {
-      color: white;
-    }
+.learn-more {
+  width: 80%;
+  height: 10%;
+  border: none;
+  border-radius: 0.5vh;
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: white;
+  margin-bottom: 2rem;
+  margin-top:1rem;
+  font-size: 1.6vh;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 1.5vh;
+  cursor: pointer;
+}
 
-    .second-button {
-      background-color: white;
-      color: hsl(236, 72%, 79%);
-      font-size: 15px;
-      font-weight: bold;
-    }
+.container .inner-container .plans .professional .learn-more {
+  background: white;
+  color: hsl(233, 13%, 49%);
+}
+.toggle-text {
+  color: hsl(234, 14%, 74%);
+}
 
-    .first-button {
-      background: linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
-      color: white;
-      font-size: 15px;
-      font-weight: bold;
-    }
-    .toggle-container{
-      display: flex;
-    }
-    input{
-      display: none;
-    }
-    .button1{
-      width: 80px;
-      height: 40px;
-      background: linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
-      border-radius: 80px;
-      cursor: pointer;
-      transition: 0.2s;
-      margin-top:-15px;
-    }
+@media (max-width: 375px) {
+  .container {
+    height: auto;
+    min-height: auto;
+    padding: 2rem;
+  }
 
-    .button1::before{
-      position: absolute;
-      content: "";
-      background-color: white;
-      width: 37px;
-      height: 37px;
-      border-radius: 80px;
-      margin-top: 1.2px;
-      margin-left: 1px;
-    }
-    
+  .inner-container {
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .toggle-container {
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+
+  .toggle {
+    height: 40px;
+    margin-bottom: 0.5rem;
+    min-height: 100%;
+  }
+
+  .plans {
+    flex-direction: column;
+    margin: 2rem 0;
+  }
+
+  .button {
+    width: 100%;
+    height: 40px;
+  }
+
+  .basic,
+  .professional,
+  .master {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 3%;
+  }
+
+  .pricing {
+    font-size: 4vw;
+  }
+
+  .learn-more {
+    width: 100%;
+  }
+
+  input:checked+.button::before {
+    transform: translateX(3.6vh);
+  }
+}
