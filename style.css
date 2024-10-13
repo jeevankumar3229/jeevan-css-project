@@ -205,7 +205,6 @@ input {
   .container {
     height: auto;
     min-height: auto;
-    padding: 2rem;
   }
 
   .inner-container {
@@ -230,6 +229,7 @@ input {
   .plans {
     flex-direction: column;
     margin: 2rem 0;
+    justify-content: center;
   }
 
   .button {
